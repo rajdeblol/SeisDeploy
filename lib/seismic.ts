@@ -4,7 +4,7 @@ export const SEISMIC_CHAIN_ID = 5124;
 export const SEISMIC_CHAIN_ID_HEX = "0x1404";
 export const SEISMIC_RPC_URL = "https://gcp-1.seismictest.net/rpc";
 export const SEISMIC_EXPLORER_URL = "https://seismic-testnet.socialscan.io";
-export const SEISMIC_FAUCET_URL = "https://faucet.seismictest.net";
+export const SEISMIC_FAUCET_URL = "https://community-faucet.seismictest.net/";
 
 export const SEISMIC_NETWORK_PARAMS = {
   chainId: SEISMIC_CHAIN_ID_HEX,

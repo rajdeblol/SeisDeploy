@@ -7,7 +7,7 @@ Production-ready single-page contract deployer built with Next.js 14 App Router,
 - Chain ID: `5124` (`0x1404`)
 - RPC: `https://gcp-1.seismictest.net/rpc`
 - Explorer: `https://seismic-testnet.socialscan.io`
-- Faucet: `https://faucet.seismictest.net`
+- Faucet: `https://community-faucet.seismictest.net/`
 
 ## Features
 
