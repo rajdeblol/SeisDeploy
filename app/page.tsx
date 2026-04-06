@@ -4,7 +4,6 @@ import { useMemo, useState } from "react";
 import { WalletPanel } from "@/components/WalletPanel";
 import { NetworkStatus } from "@/components/NetworkStatus";
 import { DeployPanel, DeployResult } from "@/components/DeployPanel";
-import { ResultCard } from "@/components/ResultCard";
 import { FaucetPanel } from "@/components/FaucetPanel";
 import { HowItWorksPanel } from "@/components/HowItWorksPanel";
 import { useWallet } from "@/lib/useWallet";
@@ -13,7 +12,7 @@ import { useTxLog } from "@/lib/useTxLog";
 export default function HomePage() {
   const wallet = useWallet();
   const { addLog } = useTxLog();
-  const [result, setResult] = useState<DeployResult | null>(null);
+  const [, setResult] = useState<DeployResult | null>(null);
   const [tab, setTab] = useState<"home" | "faucet" | "how">("home");
 
   const walletWithLogging = useMemo(
@@ -88,7 +87,6 @@ export default function HomePage() {
 
               <div className="space-y-6">
                 <DeployPanel wallet={walletWithLogging} addLog={addLog} onDeployed={setResult} />
-                {result ? <ResultCard result={result} /> : null}
               </div>
             </section>
 
