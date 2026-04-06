@@ -7,16 +7,16 @@ export function HowItWorksPanel() {
       body: "Connect MetaMask and switch to Seismic Testnet automatically."
     },
     {
-      title: "2. PASTE BYTECODE",
-      body: "Add your compiled contract bytecode and set gas/value if needed."
+      title: "2. CHOOSE TYPE",
+      body: "Pick ERC-20, ERC-721, or Simple Storage and fill the friendly form."
     },
     {
-      title: "3. DEPLOY",
-      body: "Submit the transaction and wait for on-chain confirmation."
+      title: "3. SELECT SPEED",
+      body: "Choose Slow, Medium, or Fast gas speed based on how quickly you want confirmation."
     },
     {
-      title: "4. VERIFY",
-      body: "Open explorer links for contract address and transaction hash."
+      title: "4. DEPLOY & VERIFY",
+      body: "Deploy in one click, then open the explorer link to verify your contract address."
     }
   ];
 
@@ -28,9 +28,9 @@ export function HowItWorksPanel() {
       </div>
 
       <div className="flex flex-wrap gap-3">
-        <span className="rounded-full border-2 border-[#0b0b0b] bg-white px-4 py-1.5 text-sm font-semibold">No backend</span>
+        <span className="rounded-full border-2 border-[#0b0b0b] bg-white px-4 py-1.5 text-sm font-semibold">No bytecode required</span>
         <span className="rounded-full border-2 border-[#0b0b0b] bg-white px-4 py-1.5 text-sm font-semibold">MetaMask only</span>
-        <span className="rounded-full border-2 border-[#0b0b0b] bg-white px-4 py-1.5 text-sm font-semibold">Onchain proof</span>
+        <span className="rounded-full border-2 border-[#0b0b0b] bg-white px-4 py-1.5 text-sm font-semibold">Explorer verification</span>
       </div>
 
       <div className="grid gap-5 md:grid-cols-2">
